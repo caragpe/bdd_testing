@@ -1,0 +1,3 @@
+all: -f pretty -f html -o reports/all.html
+
+user_login: -f pretty -f html -o reports/user_login.html --tags @user_login
