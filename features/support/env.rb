@@ -11,8 +11,6 @@ require 'require_all'
 Dotenv.load '.env'
 
 require_all './features/pages/**/*.rb'
-# require_all './features/pages/*.rb'
-# require_all Dir.glob("features/**/*.rb")
 
 Before do
   Capybara.current_session.current_window.resize_to(1920, 1080)
