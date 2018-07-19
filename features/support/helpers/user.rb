@@ -7,7 +7,6 @@ module UserHelper
     def initialize
       @username = ENV.fetch("APP_USERNAME")
       @password  = ENV.fetch("APP_PASSWORD")
-      @displayname = ENV.fetch("APP_DISPLAYNAME")
     end
   end
 end
