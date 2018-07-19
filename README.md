@@ -13,7 +13,7 @@ Automatic BDD testing tool for Com App.
    Installs the appropiate chromedriver executable in your gem path.
 * [Capybara](https://github.com/teamcapybara/capybara)
 
-   Simulate how a real user would interact with the app.
+   Simulates how a real user would interact with the app.
 
 * [Cucumber](https://github.com/cucumber/cucumber)
 
@@ -29,13 +29,20 @@ Automatic BDD testing tool for Com App.
 
 * [Require\_all](https://github.com/jarmo/require_all)
 
-   Point to a directory and require all the requested files at once.
+   Points to a directory and require all the requested files at once.
+
+* Dotenv
+
+* Minitest
+
+* Rake
+
 
 ## Usage
 
 The following rake task will execute the _user_login_ cucumber profile:
 
-```ruby
+```bash
 user@localhost:~/bdd_project$ rake user_login
 ```
 
@@ -86,7 +93,7 @@ The following tree represents the most important elements of this tool:
 
 If you are curious (and feel intreped) you can verify how cucumber create this skeleton:
 
-```javascript
+```bash
 user@localhost:~/bdd_project$ cucumber --init
   create features
   create features/step_definitions
